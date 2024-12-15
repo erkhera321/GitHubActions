@@ -66,8 +66,8 @@ jobs:
           name: tfplan
           path: tfplan
 
-  apply:
-    name: Terraform Apply
+  deploy:
+    name: Terraform Deploy
     needs: plan
     runs-on: ubuntu-latest
     environment: TF_APPROVER
