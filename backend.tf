@@ -1,4 +1,4 @@
-terraform {
+/*terraform {
   backend "s3" {
     bucket  = "githubactions-terraform-aws-tfstates"
     region  = "us-east-1"
@@ -12,4 +12,4 @@ terraform {
       source  = "hashicorp/aws"
     }
   }
-}
+}*/
