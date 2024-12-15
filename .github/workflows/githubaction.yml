@@ -2,7 +2,7 @@ name: "Terraform action"
 on:
   push:
     branches:
-      - '*'
+      - feature/*
       - main
 
 permissions:
