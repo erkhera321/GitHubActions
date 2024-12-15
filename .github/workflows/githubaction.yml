@@ -2,6 +2,7 @@ name: "Terraform action"
 on:
   push:
     branches:
+      - '*'
       - main
   pull_request:
 permissions:
@@ -109,6 +110,7 @@ jobs:
     needs: plan
     runs-on: ubuntu-latest
     environment: TF_APPROVER
+    if: github.ref == 'refs/heads/main'
     defaults:
       run:
         shell: bash
